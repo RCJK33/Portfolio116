@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/responsivenes.css">
+    <link rel="stylesheet" href="css/contact.css">n
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+    <title>Rafael Chavez</title>
+</head>
+
+<body>
+
+    <div class="header-container">
+        <!-- Logo - Menu -->
+
+        <div class="logo-container">
+            <a href="index.html">
+                <img class="logo-img" src="img/descarga.png" alt="">
+            </a>
+        </div>
+
+        <div class="menu-container">
+            <nav class="menu">
+                <a class="primary-button" href="./index.html">Featured Projects</a>
+                <a class="primary-button" href="./skills.html">Skills</a>
+                <a class="primary-button" href="./about.html">About Me</a>
+                <a class="primary-button current" href="./contact.html">Contact</a>
+            </nav>
+        </div>
+
+
+        <div class="menu-mobile">
+            <a onclick="menuToggle()">
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+            </a>
+            <nav id="nav-mobile" class="hidden">
+                <a class="primary-button" href="">Featured Projects</a>
+                <a class="primary-button" href="">Skills</a>
+                <a class="primary-button" href="">About Me</a>
+                <a class="primary-button" href="">Contact</a>
+            </nav>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <form class="contact-form" id="emailForm" action="">
+            <div class="element">
+                <input id="name" type="text" placeholder="Name" required>
+            </div>
+            <div class="element">
+                <input id="email" type="text" placeholder="Email" required>
+            </div>
+            <div class="element">
+                <input id="subject" type="text" placeholder="Subject">
+            </div>
+            <div class="element">
+                <textarea id="message" rows="4" placeholder="Message" required></textarea>
+            </div>
+
+            <div class="element">
+                <button class="primary-button" type="submit">Send email</button>
+                <button class="primary-button" onclick="clearForm()" type="button">Reset</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="./js/email.js"></script>
+
+    <script src="./js/interaction.js"></script>
+
+</body>
+
+</html>

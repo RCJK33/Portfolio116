@@ -1,0 +1,43 @@
+.header-container {
+    height: 60px;
+    background-color: #f2f2f2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: sticky;
+}
+
+.logo-container {
+    width: 20%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.logo-img {
+    width: 3.571rem; /* 1rem = 14px 50/14 = 3.571 */
+}
+
+.menu-container {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+ 
+.menu{
+    width: 70%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-mobile {
+    position: sticky;
+    display: none;
+}
